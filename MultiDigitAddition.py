@@ -16,7 +16,6 @@ bigger = length_first if length_first > length_second else length_second
 bigger_num = max(A,B)
 smaller_num = min(A,B)
 
-print ("bigger, bigger_num, smaller_num", bigger, max(A,B), smaller_num)
 # Declare a data structure the size of the largest number
 first_number = [0] * bigger
 second_number = [0] * bigger
@@ -38,8 +37,6 @@ for number in range(0,digit_difference):
 for number in range(digit_difference, length_second + digit_difference):
 	second_number[number] = int (str(smaller_num)[number - digit_difference])
 
-print first_number
-print second_number
 # Now we can start adding digits that are in the same indexes
 # However, we need to make sure we handle the carry over case
 index = bigger
@@ -47,7 +44,7 @@ carry = 0
 carry_flag = 0
 
 
-
+# After first pass through the loop
 # following our example numbers, answer now has [0, 0, 0, 0, 0, 7]
 # decrement the index to move on to the next position
 
@@ -65,8 +62,6 @@ while index:
 	index = index - 1
 	print index
 
-
-print("This is answer = ", answer)
 
 # This part handles the reassembling of the number
 # We can use our knowledge that the number is in base 10, to reassamble it
