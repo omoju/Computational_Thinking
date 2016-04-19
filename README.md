@@ -1,5 +1,6 @@
 Computational_Thinking
 ======================
 
-Some algorithms for elementary arithmetic
-Inspired by Seymour Papert Mindstorms, Children, Computers and Powerful Ideas.
+An algorithm simulating multi-digit addition.
+
+Inspired by Seymour Papert's  *Mindstorms, Children, Computers and Powerful Ideas*.
